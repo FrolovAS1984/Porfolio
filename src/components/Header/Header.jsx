@@ -1,40 +1,30 @@
-import '../../styles/Header.css'
-import {useState} from "react";
+import '../../styles/Header.css';
+import { NavLink } from 'react-router-dom';
 
-function Header () {
+function Header() {
 
-    const [selectedLink, setSelectedLink] = useState('Home');
-
-    const handleLinkClick = (link) => {
-
-        setSelectedLink(link);
-    };
-    return (
-        <nav className="navbar">
-            <a
-                href="/"
-                onClick={() => handleLinkClick('Home')}
-                className={selectedLink === 'Home' ? 'clicked' : ''}
-            >
-                Home
-            </a>
-            <a
-                href="#"
-                onClick={() => handleLinkClick('About')}
-                className={selectedLink === 'About' ? 'clicked' : ''}
-            >
-
-                About
-            </a>
-            <a
-                href="#"
-                onClick={() => handleLinkClick('Projects')}
-                className={selectedLink === 'Projects' ? 'clicked' : ''}
-            >
-                Projects
-            </a>
-        </nav>
-    )
+  return (
+    <nav className="navbar">
+      <NavLink
+        to="/"
+        className={({ isActive }) => isActive ? 'clicked' : ''}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => isActive ? 'clicked' : ''}
+      >
+        About
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive }) => isActive ? 'clicked' : ''}
+      >
+        Projects
+      </NavLink>
+    </nav>
+  );
 }
 
 export default Header;

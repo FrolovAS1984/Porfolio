@@ -1,12 +1,14 @@
+import '../../../styles/Home.css'
+
 function Home() {
 
     return (
         <div>
 
-            <div>
-                <p>Anton Frolov</p>
-                <p>Fullstack-разработчик на python</p>
-                <p>Python | Django | JS | React</p>
+            <div className={'about'}>
+                <p className={'name'}>Anton Frolov</p>
+                <p className={'specialization'}>Fullstack-разработчик на python</p>
+                <p className={'stack'}>Python | Django | JS | React</p>
             </div>
             <div>
                 {/*<img src={}>*/}

@@ -1,0 +1,31 @@
+.about_main {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    margin: 50px 50px;
+    padding: 30px;
+}
+
+.about_description {
+    text-align: justify;
+}
+
+.about_description p {
+    text-indent: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #4d4d4d;
+    letter-spacing: .05rem;
+}
+
+.about_description p a {
+    color: #5970FF;
+}
+
+
+.about_title {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: .1rem;
+}
+

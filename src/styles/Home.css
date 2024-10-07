@@ -1,0 +1,28 @@
+.about {
+    color: #4d4d4d;
+    margin-top: 20vw;
+    margin-left: 100px;
+
+}
+
+.name {
+    margin: 0 auto;
+    font-size: calc(4vw + .8rem);
+    font-weight: 200;
+    letter-spacing: .7rem;
+    text-transform: uppercase;
+}
+
+
+.specialization {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+}
+.stack {
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
